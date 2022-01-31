@@ -21,7 +21,7 @@ $(document).ready(function () {
             var hourTime = parseInt($(this).attr("id").split("hour")[1]);
 
             // removing any of the old classes from the element and adding new class if it less than time
-            if (hourTime < timeNow) {
+            if (hourTime < timeNow)] {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
                 $(this).addClass("past");
@@ -38,6 +38,7 @@ $(document).ready(function () {
             }
 
         })
+
     }
     // get items to stay when restarting the page.
     $("#hour-7 .description").val(localStorage.getItem("hour-7"));
